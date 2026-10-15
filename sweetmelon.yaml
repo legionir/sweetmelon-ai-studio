@@ -1,0 +1,23 @@
+# Release of the Sweetmelon core this app is built for. Change it on purpose
+# (sweetmelon upgrade), after reading the core CHANGELOG.
+core: "2.6"
+
+project:
+  name: sweetmelon_ai_studio
+  display_name: "Melon AI Studio"
+  version: 1.0.0
+  # com.example triggers a validator warning on purpose: change it before publishing.
+  application_id: com.example.sweetmelon_ai_studio
+  dart_package: sweetmelon_ai_studio
+  icon: icon.png
+
+# auto: the plugins the app calls are on, the rest are off.
+# `include` pins the ones this app relies on, so a scan that cannot resolve a
+# call never silently drops them. Check with:
+#   npm run detect            # reads www/, no Dart needed
+plugin_selection:
+  mode: auto
+  include: [model_manager, llm, speech_offline, storage, toast, haptic, safe_area, back_button]
+  exclude: []
+
+plugins: {}

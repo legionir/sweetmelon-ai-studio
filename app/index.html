@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <title>Melon AI Studio</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!--
+      The bridge SDK. In a Sweetmelon build this file is the core copy
+      (assets/www/js/native-sdk.js) and defines window.NativeSDK. The copy in
+      app/public/js is a placeholder for the browser dev server.
+
+      sweetmelon:uses model_manager, llm, speech_offline, storage, toast, haptic, safe_area, back_button
+    -->
+    <script src="js/native-sdk.js"></script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

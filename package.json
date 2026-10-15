@@ -1,0 +1,37 @@
+{
+  "name": "sweetmelon-ai-studio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Talk to a local AI: hold to speak, the answer is spoken back. Offline models you add from your phone (Sweetmelon core).",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --host",
+    "playground": "node tool/build-playground.mjs && vite preview --config vite.playground.config.ts",
+    "typecheck": "tsc --noEmit",
+    "detect": "node tool/detect-check.mjs",
+    "smoke": "node tool/build-playground.mjs && node tool/smoke-test.mjs",
+    "smoke:web": "npm run build && node tool/smoke-test.mjs www",
+    "test": "node --test tool/unit.test.mjs"
+  },
+  "dependencies": {
+    "clsx": "2.1.1",
+    "lucide-react": "^1.56.0",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "tailwind-merge": "3.4.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "4.1.17",
+    "@types/node": "22.19.17",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "5.1.1",
+    "jsdom": "^30.1.2",
+    "tailwindcss": "4.1.17",
+    "typescript": "5.9.3",
+    "vite": "7.3.2",
+    "vite-plugin-singlefile": "2.3.0"
+  }
+}
