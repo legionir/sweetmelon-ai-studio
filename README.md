@@ -72,6 +72,8 @@ so the flow can be run without a phone. Real models need the Android or iOS app.
 
 **Actions → Build app → Run workflow.** The workflow builds the web app, runs the
 tests, then the Sweetmelon Action builds the APK (`legionir/sweetmelon@v2.6.0`).
+GitHub lists a manually-run workflow only once its file is on the default
+branch, so keep `main` as the default branch.
 Change `application_id` in `sweetmelon.yaml` before publishing.
 
 ## Layout
